@@ -2,9 +2,9 @@ import pandas as pd
 import time
 import csv
 
-path = 'input.csv'
+#path = 'input.csv'
 
-def day_1_part_1(path):
+def day_1_part_1('input.csv'):
     df = pd.read_csv(path, sep = ',', names = ['numbers'])
     values = set(df['numbers'])
     for i in values:
